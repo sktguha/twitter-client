@@ -1,0 +1,32 @@
+<head>
+	<script async=true src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+	<script>
+	// Instead of using data-dojo-config, we're creating a dojoConfig
+	// object *before* we load dojo.js; they're functionally identical,
+	// it's just easier to read this approach with a larger configuration.
+	var dojoConfig = {
+		async: true,
+		//parseOnLoad: true,
+		packages: [{
+			name: "twitterClient",
+			location: location.pathname.replace(/\/[^/]*$/, '') + '/modules'
+		}],
+		isDebug : true
+	};
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/dojo/1.7.8/dojo/dojo.js"></script>
+<!--script src="/modules/main2.js"></script-->
+<script>
+	require([
+		"dojo/parser",
+		"twitterClient/App"
+		], function(parser){
+			parser.parse();
+		});
+</script>
+<link rel="stylesheet" type="text/css" href="../style/style.css">
+</head>
+<body>
+	<div data-dojo-type="twitterClient.App">
+	</div>
+</body>

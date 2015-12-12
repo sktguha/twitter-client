@@ -1,0 +1,6 @@
+use declare in userName manager
+clean up main
+addloader and remove loader in seperate module or seperate widget, template
+main should be a widget
+variable names
+TweetListWidget should not be created again and again ?

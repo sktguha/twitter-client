@@ -1,0 +1,29 @@
+<div>
+	<div data-dojo-attach-point="hashTagList">
+	</div>
+	<table padding="1">
+		<tr>
+			<td valign="top">
+				<form data-dojo-attach-point = "form" id="form">
+					Enter the twitter handle name to fetch
+					<br>
+					<input type="text" data-dojo-attach-point="name">
+					<br> Enter the number of tweets to fetch
+					<br>
+					<input type="number" data-dojo-attach-point="count" value="2">
+					<br>
+					<input type="submit" value="submit"> 
+				</form>
+				<div data-dojo-attach-point="userList">
+				</div>
+			</td>
+			<td>
+				<div data-dojo-attach-point="result"> 
+					Result in chronological order 
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div data-dojo-attach-point="loaderContainer">
+	</div>
+</div>

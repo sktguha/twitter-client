@@ -1,0 +1,14 @@
+{
+  "name": "twitter-client-dojo",
+  "version": "0.0.0",
+  "description": "a simple client in dojo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "dependencies": { 
+      "oauth": "0.9.13"
+   }
+}
